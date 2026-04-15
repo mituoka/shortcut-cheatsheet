@@ -57,11 +57,12 @@ export default function Home() {
         </div>
 
         <Tabs defaultValue="Chrome" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-6">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-6">
             {shortcutsData.map((app) => (
-              <TabsTrigger key={app.name} value={app.name} className="text-base">
-                <span className="mr-2">{app.icon}</span>
-                {app.name}
+              <TabsTrigger key={app.name} value={app.name} className="text-sm md:text-base">
+                <span className="mr-1 md:mr-2">{app.icon}</span>
+                <span className="hidden sm:inline">{app.name}</span>
+                <span className="sm:hidden">{app.name.split(" ")[0]}</span>
               </TabsTrigger>
             ))}
           </TabsList>
