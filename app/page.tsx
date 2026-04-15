@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Search, Globe, Play, Code2, Palette, Bot, Sparkles } from "lucide-react"
+import { Search, Folder, Laptop, Globe, Play, Code2, Palette, Bot, Sparkles } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -9,6 +9,8 @@ import { Badge } from "@/components/ui/badge"
 import { shortcutsData } from "@/lib/shortcuts-data"
 
 const iconMap = {
+  Folder,
+  Laptop,
   Globe,
   Play,
   Code2,
@@ -65,8 +67,8 @@ export default function Home() {
           />
         </div>
 
-        <Tabs defaultValue="Chrome" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 lg:grid-cols-6 mb-5 h-auto p-1">
+        <Tabs defaultValue="Finder" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-8 mb-5 h-auto p-1">
             {shortcutsData.map((app) => {
               const Icon = iconMap[app.icon as keyof typeof iconMap]
               return (
