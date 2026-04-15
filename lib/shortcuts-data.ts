@@ -3,7 +3,7 @@ import { ShortcutApp } from "./types"
 export const shortcutsData: ShortcutApp[] = [
   {
     name: "Chrome",
-    icon: "🌐",
+    icon: "Globe",
     shortcuts: [
       { keys: ["Cmd", "T"], description: "新しいタブを開く", category: "タブ操作" },
       { keys: ["Cmd", "W"], description: "タブを閉じる", category: "タブ操作" },
@@ -29,7 +29,7 @@ export const shortcutsData: ShortcutApp[] = [
   },
   {
     name: "YouTube",
-    icon: "▶️",
+    icon: "Play",
     shortcuts: [
       { keys: ["Space"], description: "再生/一時停止", category: "再生操作" },
       { keys: ["K"], description: "再生/一時停止", category: "再生操作" },
@@ -54,7 +54,7 @@ export const shortcutsData: ShortcutApp[] = [
   },
   {
     name: "VS Code",
-    icon: "💻",
+    icon: "Code2",
     shortcuts: [
       { keys: ["Cmd", "P"], description: "ファイルを開く", category: "ファイル操作" },
       { keys: ["Cmd", "Shift", "P"], description: "コマンドパレット", category: "コマンド" },
@@ -93,7 +93,7 @@ export const shortcutsData: ShortcutApp[] = [
   },
   {
     name: "PixAI",
-    icon: "🎨",
+    icon: "Palette",
     shortcuts: [
       { keys: ["Space"], description: "画像の拡大/縮小切替", category: "表示操作" },
       { keys: ["Ctrl", "Enter"], description: "生成開始", category: "生成操作" },
@@ -117,7 +117,7 @@ export const shortcutsData: ShortcutApp[] = [
   },
   {
     name: "Claude Code",
-    icon: "🤖",
+    icon: "Bot",
     shortcuts: [
       { keys: ["/help"], description: "ヘルプを表示", category: "コマンド" },
       { keys: ["/clear"], description: "会話をクリア", category: "コマンド" },
@@ -139,7 +139,7 @@ export const shortcutsData: ShortcutApp[] = [
   },
   {
     name: "Gemini",
-    icon: "✨",
+    icon: "Sparkles",
     shortcuts: [
       { keys: ["Cmd", "Enter"], description: "メッセージを送信", category: "チャット操作" },
       { keys: ["Shift", "Enter"], description: "改行", category: "チャット操作" },
